@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/HeroSection.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="#">Portfo<span>lio</span></a>
+        </div>
+        <nav>
+          <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="bar_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="drop">
+        <div class="dropdown_nav">
+          <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+    <script>
+      const bar_btn = document.querySelector(".bar_btn");
+      const dropdown_nav = document.querySelector(".dropdown_nav");
+
+      menuToggle.addEventListener("click", function () {
+        dropdown_nav.classList.toggle("active");
+      });
+    </script>
+    <!-- <script>
+      const toggleNavBtn = document.querySelector("bar_btn");
+      const dropdownmenu = document.querySelector(".dropdownmenu");
+      toggleNavBtn.onclick = function () {
+        dropdownmenu.classList.toggle("open");
+      };
+    </script> -->
+    <!-- Hero Section -->
+    <div class="heroSection" id="home">
+      <div class="heroBlock">
+        <p>Hi! My name is</p>
+        <h1>Tallat Amin</h1>
+        <p>& I'm a <span class="auto-input"></span></p>
+      </div>
+      <div class="heroImage">
+        <img src="images/Cool Kids - Study.png" alt="programmer" />
+      </div>
+    </div>
+    <div class="about" id="about">
+      <div class="container1">
+        <div class="f1">
+          <img src="images/About me-rafiki.png" />
+        </div>
+        <div class="f2">
+          <div class="content">
+            <h1>Introduction</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+              asperiores dignissimos ipsum et aliquid veniam, provident eligendi
+              distinctio sunt tempore laborum obcaecati! Et, at, alias modi
+              nobis vel recusandae dignissimos quisquam possimus facere
+              distinctio, nulla ipsam quae ex rem. Tempora sint illum odio non
+              velit! Adipisci repellat ab corrupti illum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="contact" id="contact">
+      <div class="container2">
+        <button>HIRE ME!</button>
+        <br />
+        <p>Here are my Socials</p>
+        <div class="socials">
+          <a href="https://github.com/Tallat-Amin"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/tallat-amin-978a27231/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="mailto: tallat_amin@hotmail.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
